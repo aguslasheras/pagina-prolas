@@ -1,0 +1,482 @@
+html{
+    font-size: 62.5%; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#logoprolas{
+    width: 40rem;
+    margin-left: 0.5rem;
+    margin-right: auto;
+    
+}
+
+#encabezado {
+    background-color: #f5f3f4;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+
+ul{
+    font-size: large;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: right;
+    display: flex;
+    
+}
+
+li{
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+#menu1 {
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+}
+
+#imageninicio {
+    width: 100%;
+    height: 40rem;
+}
+
+.imagen-inicio-de-pagina{
+    background-image: url(../imagenes/perspectivas-tintas__ID.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}   
+
+.textoinicio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+h6 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    width: 45rem;
+    font-size: medium;
+}
+
+#tintas-diluyentes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+
+.diluyentes img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 25%;
+    margin-top: 10px;
+}
+
+#imagentinta{
+    width: 96%;
+    max-width: 96%;
+    border-radius: 25%;
+    margin-top: 1rem;
+    
+}
+
+.texto-diluyente-tinta {
+    background-color: #f2f2f2; 
+    padding: 1rem;
+    text-align: center;
+}
+
+.texto-diluyente-tinta h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.texto-diluyente-tinta p {
+    font-size: 1.5rem;
+}
+
+#clientes1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagen texto";
+}
+
+#imagenclientes {
+    width: 100%
+}
+
+.textoclientes2 {
+    background-color: #f2f2f2; 
+    padding: 2rem;  
+    
+}
+
+.textoclientes2 h2{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.textoclientes2 p {
+    text-align: center;
+}
+
+
+.enlacecliente{
+    font-size: medium;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 1rem 1rem 1rem 1rem;
+    display: block;
+}
+
+#atajos {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#atajos a{
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+}
+#logofooter {
+    width: 15rem;
+    margin-right: auto;
+    margin-left: 0.5rem;
+    grid-column: 1;
+    
+
+}
+
+.mapafootergrid {
+    grid-column: 2;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 1rem;
+    
+    
+    
+}
+.mapafootergrid iframe {
+    width: 20rem;
+    height: 10rem;
+    margin-top: 0.5rem;
+    
+
+}
+
+.formulriofooter {
+    grid-column: 3;
+    justify-content: center;
+    
+}
+
+#info-footer {
+    display: grid;
+    grid-template-columns: auto 1fr auto ;
+    align-items: center;
+    background-color: #d3d3d3;
+    color: black;
+
+
+}
+
+.wsp img{
+    width: 5rem;
+    height: 5rem;    
+    background-color: #4FCC5D;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.wsp {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+
+}
+
+
+
+
+
+
+/* css pagina clientes */
+
+#clientebackground {
+    font-size: medium;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem;
+    background-image: url(../imagenes/fondo\ paginas\ secundarias.jpg)
+    
+}
+
+#clientes-ejemplo {
+    width: 40rem;
+    margin-top: 2rem;
+    grid-area: imagen;
+}
+
+#clientesgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "imagen texto";
+    background-color: rgb(254, 154, 154);
+}
+
+.imagenpaginaclientes {
+    grid-area: imagen;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.textopaginaclientes {
+    grid-area: texto;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+
+/*diseño tablet*/
+
+
+
+/* css pagina nosotros */
+
+#nosotros {
+    display: inline-block;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+#frentefabrica {
+    height: 30rem;
+
+
+}
+
+#nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "fotonos textonos";
+    text-align: center;
+}
+
+#nosotros img {
+    grid-area: fotonos;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+#nosotros p {
+    grid-area: textonos;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+/* css pagina contacto */
+
+#mapacontacto {
+    width: 100%;
+    height: 400px;
+}
+
+/* css productos */
+
+#tintasproductos {
+    margin-top: 2rem;
+}
+
+.tintas-colores-diluyentes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "tinta diluyente color1" 
+    "texto1 texto2 texto3";
+}
+
+.imagenproductos1 {
+    grid-area: texto1;
+}
+
+.imagenproductos2 {
+    grid-area: diluyente;
+}
+
+.imagenproductos3 {
+    grid-area: color1;
+}
+
+.textoproductos1 {
+    grid-area: texto1;
+}
+
+.textoproductos2 {
+    grid-area: texto2;
+}
+
+.textoproductos3 {
+    grid-area: texto3;
+}
+
+.textoproductos3 a {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    #encabezado {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #logoprolas {
+        width: 20rem;
+        margin: 0;
+    }
+
+    #menu {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #info-footer {
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .mapafootergrid {
+        grid-column: 2;
+    }
+
+    .formulriofooter {
+        grid-column: 3;
+        display: flex;
+        align-items: center;
+    }
+
+    .formulriofooter form {
+        width: 100%;
+    }
+    #clientesgrid {
+        display: block;
+        
+    }
+    
+    #clientesgrid .imagenpaginaclientes {
+        width: 100%;
+    }
+    
+    #clientesgrid .textopaginaclientes {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #encabezado {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #menu li {
+        margin-bottom: 0.5rem;
+    }
+
+    #logoprolas {
+        width: 80%;
+        margin: 1rem auto;
+    }
+    #tintas-diluyentes {
+        grid-template-columns: 1fr;
+    }
+    #clientes1 {
+        grid-template-columns: 1fr;
+    }
+    #atajos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #atajos a {
+        font-size: 1.6rem;
+        padding: 0.8rem 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    #info-footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        text-align: center;
+    }
+
+    #logofooter {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .mapafootergrid {
+        grid-column: 1;
+    }
+
+    .formulriofooter {
+        grid-column: 1;
+    }
+    #clientesgrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    #clientesgrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
