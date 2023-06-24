@@ -8,10 +8,9 @@ html{
 }
 
 #logoprolas{
-    width: 40rem;
-    margin-left: 0.5rem;
+    width: 25%;
+    margin-left: 2%;
     margin-right: auto;
-    
 }
 
 #encabezado {
@@ -36,7 +35,7 @@ ul{
 li{
     display: inline-block;
     text-decoration: none;
-    margin-bottom: 1rem;
+    margin-bottom: 5%;
 }
 
 #menu1 {
@@ -50,7 +49,7 @@ li{
     height: 40rem;
 }
 
-.imagen-inicio-de-pagina{
+#imagen-inicio-de-pagina{
     background-image: url(../imagenes/perspectivas-tintas__ID.jpg);
     background-size: cover;
     background-position: center;
@@ -73,7 +72,7 @@ h6 {
 }
 
 p {
-    width: 45rem;
+
     font-size: medium;
 }
 
@@ -127,7 +126,7 @@ p {
 
 .textoclientes2 {
     background-color: #f2f2f2; 
-    padding: 2rem;  
+    padding: 4rem;  
     
 }
 
@@ -191,10 +190,8 @@ p {
 
 }
 
-.formulriofooter {
-    grid-column: 3;
-    justify-content: center;
-    
+.formulario {
+    margin: 5% 5% 5% 15%;
 }
 
 #info-footer {
@@ -233,36 +230,35 @@ p {
     font-size: medium;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5rem;
+    padding: 5%;
     background-image: url(../imagenes/fondo\ paginas\ secundarias.jpg)
     
 }
 
 #clientes-ejemplo {
-    width: 40rem;
-    margin-top: 2rem;
-    grid-area: imagen;
+    width: 70%;  
 }
+
 
 #clientesgrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "imagen texto";
     background-color: rgb(254, 154, 154);
+
 }
 
 .imagenpaginaclientes {
     grid-area: imagen;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
 .textopaginaclientes {
     grid-area: texto;
     text-align: center;
-    margin-top: 130px;
-    margin-bottom: 100px;
+    margin-top: 26%;
 }
 
 /*diseño tablet*/
@@ -399,16 +395,36 @@ p {
         width: 100%;
     }
     #clientesgrid {
-        display: block;
-        
+        display: block;   
     }
     
     #clientesgrid .imagenpaginaclientes {
         width: 100%;
     }
-    
-    #clientesgrid .textopaginaclientes {
-        text-align: center;
+
+    .imagenpaginaclientes {
+        margin-top: 0;
+    }
+
+    #clientes-ejemplo {
+        margin-top: 6%;
+    }
+    #clientes1 {
+        display: block;
+    }
+
+    #nosotros {
+        display: block;
+    }
+
+    #frentefabrica {
+        width: 90%;
+    }
+    #nosotros p {
+        margin: 5% 5% 5% 5%;
+    }
+    #nosotros img {
+        margin: 0%;
     }
 }
 
@@ -473,10 +489,25 @@ p {
         flex-direction: column;
         align-items: center;
     } 
-    #clientesgrid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #clientes1 {
+        display: block;
+    }
+    #clientes-ejemplo{
+        width: 85%;
+    }
+    #nosotros {
+        display: block;
+    }
+
+    #frentefabrica {
+        width: 90%;
+    }
+
+    #nosotros p {
+        margin: 5% 5% 5% 5%;
+    }
+    #nosotros img {
+        margin: 0%;
     }
 }
 
