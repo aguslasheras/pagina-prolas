@@ -8,7 +8,7 @@ html{
 }
 
 #logoprolas{
-    width: 25%;
+    width: 40%;
     margin-left: 2%;
     margin-right: auto;
 }
@@ -17,9 +17,6 @@ html{
     background-color: #f5f3f4;
     position: sticky;
     top: 0;
-    display: flex;
-    align-items: center;
-    z-index: 999;
 }
 
 
@@ -28,8 +25,9 @@ ul{
     text-decoration: none;
     list-style-type: none;
     text-align: right;
-    display: flex;
-    
+}
+#navbarSupportedContent {
+    flex-grow: 0;
 }
 
 li{
@@ -38,11 +36,6 @@ li{
     margin-bottom: 5%;
 }
 
-#menu1 {
-    text-decoration: none;
-    padding: 1rem;
-    color: black;
-}
 
 #imageninicio {
     width: 100%;
@@ -231,8 +224,16 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5%;
-    background-image: url(../imagenes/fondo\ paginas\ secundarias.jpg)
+    background-image: url(../imagenes/fondo\ paginas\ secundarias.jpg);
     
+}
+
+#clientebackground h1 {
+    color: white;
+    background-color: rgb(192, 192, 192, 0.5);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15%;
 }
 
 #clientes-ejemplo {
@@ -258,7 +259,8 @@ p {
 .textopaginaclientes {
     grid-area: texto;
     text-align: center;
-    margin-top: 26%;
+    margin-top: 16%;
+    margin-right: 2%;
 }
 
 /*diseño tablet*/
@@ -306,6 +308,15 @@ p {
     height: 400px;
 }
 
+.formulario3 {
+    background-color:antiquewhite ;
+    text-align: center;
+}
+
+.enviar{
+    font-size: 2rem;
+}
+
 /* css productos */
 
 #tintasproductos {
@@ -315,46 +326,63 @@ p {
 .tintas-colores-diluyentes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "tinta diluyente color1" 
-    "texto1 texto2 texto3";
 }
 
 .imagenproductos1 {
     grid-area: texto1;
+    margin: 0% 3% 3% 3%;
 }
 
 .imagenproductos2 {
     grid-area: diluyente;
+    margin: 3% 3% 3% 3%
 }
 
 .imagenproductos3 {
     grid-area: color1;
+    margin: 3% 3% 3% 3%
 }
 
 .textoproductos1 {
     grid-area: texto1;
+    margin: 3% 3% 3% 3%;
+    background-color: orange;
+    border-radius: 3%;
+}
+.tintas-colores-diluyentes h1 {
+    margin: 3% 3% 3% 3%;
+}
+.tintas-colores-diluyentes h2 {
+    padding: 2%;
+    
 }
 
 .textoproductos2 {
     grid-area: texto2;
+    background-color: rgb(61, 195, 253);
+    border-radius: 3%;
 }
 
 .textoproductos3 {
     grid-area: texto3;
+    background-color: pink ;
+    border-radius: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-.textoproductos3 a {
-    padding: 1rem 2rem;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    font-size: 1.2rem;
+#catalogo {
+    background-color: pink;
+    color: #514e4e;
+    font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
     border-radius: 4px;
 }
+
+
 
 
 
@@ -425,6 +453,24 @@ p {
     }
     #nosotros img {
         margin: 0%;
+    }
+    ul {
+        text-align: left;
+    }
+    .tintas-colores-diluyentes{
+        display: block;
+    }
+    .imagenproductos1 {
+        width: 95%;
+    }
+    .imagenproductos2{
+        width: 95%;
+    }
+    .imagenproductos3 {
+        width: 95%;
+    }
+    .textopaginaclientes {
+        margin-bottom: 0%;
     }
 }
 
@@ -508,6 +554,12 @@ p {
     }
     #nosotros img {
         margin: 0%;
+    }
+    ul {
+        text-align: left;
+    }
+    .textopaginaclientes {
+        margin-top: 2%;
     }
 }
 

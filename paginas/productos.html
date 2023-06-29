@@ -8,6 +8,7 @@
     <!-- icono -->
     <link rel="shortcut icon" href="../imagenes/prolas2.ico" type="image/x-icon">
     <!-- css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/stlyles.css">
     <!-- fuente  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,17 +17,25 @@
 
 </head>
 <body>
-    <header id="encabezado"> <!-- encabezado -->
-        <img src="../imagenes/FireShot_Capture_001_-_Brandmark_-_make_your_logo_in_minutes_-_app_brandmark_io-NqhF-o6WI-transformed-transformed (1).png" alt="logo" id="logoprolas">
-        <nav>
-            <!-- menu de navegacion -->
-            <ul id="menu">
-                <li><a href="../index.html" id="menu1">inicio</a></li>
-                <li><a href="Clientes.html" id="menu1">Clientes</a></li>
-                <li><a href="productos.html" id="menu1">Productos</a></li>
-                <li><a href="nosotros.html" id="menu1">Nosotros</a></li>
-                <li><a href="contacto.html" id="menu1">Contacto</a></li>
-            </ul>
+    <header > <!-- encabezado -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a id="logoprolas" href="#">
+                    <img src="../imagenes/FireShot_Capture_001_-_Brandmark_-_make_your_logo_in_minutes_-_app_brandmark_io-NqhF-o6WI-transformed-transformed (1).png" alt="logo" id="logoprolas">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/clientes.html">Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
 
@@ -36,7 +45,7 @@
         </section>
         <div class="tintas-colores-diluyentes">
             <section id="tintasproductos">
-                <img src="../imagenes/img-nota-21-350x265.jpg" alt="" class="imagenproducos1">
+                <img src="../imagenes/img-nota-21-350x265.jpg" alt="" class="imagenproductos1">
                 <div class="textoproductos1"> 
                     <h1>Tintas</h1>
                     <h2>Excelente brillo y adherencia, colores intensos y baja viscosidad. Las líneas FLEXOPOL, FLEXOTERM, FLEXOTEX y NITROFRENT son aptas para imprimir de frente en prácticamente todos los sustratos. Las líneas NITROPACK y ULTRAPACK son recomendadas para laminación y fueron pensadas para impresión de dorso.</h2>
@@ -54,7 +63,7 @@
                 <img src="../imagenes/colorproductos.jpg" alt="" class="imagenproductos3">
                 <div class="textoproductos3">
                     <h1>Colores</h1>
-                    <a href="../imagenes/PROLAS-Catálogo-Color.pdf">Ver catalogo de colores</a>
+                    <a href="../imagenes/PROLAS-Catálogo-Color.pdf" id="catalogo">Ver catalogo de colores</a>
                 </div>
             </section>
         </div>
@@ -96,5 +105,8 @@
     
         
     </footer>
+
+    <!-- script js de bootstrap -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
