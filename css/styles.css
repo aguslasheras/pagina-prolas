@@ -1,0 +1,453 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#logoprolas {
+  width: 40%;
+  margin-left: 2%;
+  margin-right: auto;
+}
+
+#encabezado {
+  background-color: #f5f3f4;
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  font-size: large;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: right;
+}
+ul li {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 5%;
+}
+
+#imagen-inicio-de-pagina {
+  background-image: url(../imagenes/perspectivas-tintas__ID.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+#imagen-inicio-de-pagina .textoinicio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+#imagen-inicio-de-pagina .textoinicio h6 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+#imageninicio {
+  width: 100%;
+  height: 40rem;
+}
+
+p {
+  font-size: medium;
+}
+
+#tintas-diluyentes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+#tintas-diluyentes #imagentinta {
+  width: 96%;
+  max-width: 96%;
+  border-radius: 25%;
+  margin-top: 1rem;
+}
+#tintas-diluyentes .texto-diluyente-tinta {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  text-align: center;
+}
+#tintas-diluyentes .texto-diluyente-tinta .texto-diluyente-tinta h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#tintas-diluyentes .texto-diluyente-tinta .texto-diluyente-tinta p {
+  font-size: 1.5rem;
+}
+#tintas-diluyentes .diluyentes img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 25%;
+  margin-top: 10px;
+}
+
+#clientes1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "imagen texto";
+}
+#clientes1 .textoclientes2 {
+  background-color: #f2f2f2;
+  padding: 4rem;
+}
+#clientes1 .textoclientes2 h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+#clientes1 .textoclientes2 p {
+  text-align: center;
+}
+
+#atajos {
+  text-align: center;
+  background-color: antiquewhite;
+}
+#atajos .enlacecliente, #atajos .volverarriba {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-size: 2rem;
+}
+#atajos .volverarriba {
+  background-color: green;
+}
+
+#info-footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  background-color: #d3d3d3;
+  color: black;
+}
+#info-footer #logofooter {
+  width: 15rem;
+  margin-right: auto;
+  margin-left: 0.5rem;
+  grid-column: 1;
+}
+#info-footer .mapafootergrid {
+  grid-column: 2;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  gap: 1rem;
+}
+#info-footer .mapafootergrid iframe {
+  width: 20rem;
+  height: 10rem;
+  margin-top: 0.5rem;
+}
+#info-footer .formulario {
+  margin: 5% 5% 5% 15%;
+}
+
+.wsp {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+}
+.wsp img {
+  width: 5rem;
+  height: 5rem;
+  background-color: #4FCC5D;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+/* css pagina clientes */
+#clientebackground {
+  font-size: medium;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+  background-image: url(../imagenes/fondo\ paginas\ secundarias.jpg);
+}
+#clientebackground h1 {
+  color: white;
+  background-color: rgba(192, 192, 192, 0.5);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 15%;
+}
+
+#clientesgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "imagen texto";
+  background-color: rgb(254, 154, 154);
+}
+#clientesgrid .imagenpaginaclientes {
+  grid-area: imagen;
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+#clientesgrid .imagenpaginaclientes #clientes-ejemplo {
+  width: 70%;
+}
+#clientesgrid .textopaginaclientes {
+  grid-area: texto;
+  text-align: center;
+  margin-top: 16%;
+  margin-right: 2%;
+}
+
+/* css pagina nosotros */
+#nosotros {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "fotonos textonos";
+  text-align: center;
+}
+#nosotros img {
+  grid-area: fotonos;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+#nosotros p {
+  grid-area: textonos;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+#nosotros #frentefabrica {
+  height: 30rem;
+}
+
+/* css pagina contacto */
+#mapacontacto {
+  width: 100%;
+  height: 400px;
+}
+
+.formulario3 {
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+.enviar {
+  font-size: 2rem;
+}
+
+/* css productos */
+.tintas-colores-diluyentes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "tinta diluyente color1";
+}
+.tintas-colores-diluyentes #tintasproductos {
+  margin-top: 2rem;
+}
+.tintas-colores-diluyentes #tintasproductos .imagenproductos1 {
+  grid-area: texto1;
+  margin: 0% 3% 3% 3%;
+}
+.tintas-colores-diluyentes #tintasproductos .textoproductos1 {
+  grid-area: texto1;
+  margin: 3% 3% 3% 3%;
+  background-color: orange;
+  border-radius: 3%;
+}
+.tintas-colores-diluyentes h1 {
+  margin: 3% 3% 3% 3%;
+}
+.tintas-colores-diluyentes h2 {
+  padding: 2%;
+}
+.tintas-colores-diluyentes .imagenproductos2 {
+  grid-area: diluyente;
+  margin: 3% 3% 3% 3%;
+}
+.tintas-colores-diluyentes .textoproductos2 {
+  grid-area: texto2;
+  background-color: rgb(61, 195, 253);
+  border-radius: 3%;
+}
+.tintas-colores-diluyentes .imagenproductos3 {
+  grid-area: color1;
+  margin: 3% 3% 3% 3%;
+}
+.tintas-colores-diluyentes .textoproductos3 {
+  grid-area: texto3;
+  background-color: pink;
+  border-radius: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.tintas-colores-diluyentes .textoproductos3 #catalogo {
+  background-color: pink;
+  color: #514e4e;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  #encabezado {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #logoprolas {
+    width: 20rem;
+    margin: 0;
+  }
+  #menu {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #info-footer {
+    grid-template-columns: auto 1fr auto;
+  }
+  #info-footer .mapafootergrid {
+    grid-column: 2;
+  }
+  #info-footer .formulriofooter {
+    grid-column: 3;
+    display: flex;
+    align-items: center;
+  }
+  #info-footer .formulriofooter form {
+    width: 100%;
+  }
+  #clientesgrid {
+    display: block;
+  }
+  #clientesgrid .imagenpaginaclientes {
+    width: 100%;
+    margin-top: 0;
+  }
+  #clientesgrid .imagenpaginaclientes #clientes-ejemplo {
+    margin-top: 6%;
+  }
+  #clientesgrid .textopaginaclientes {
+    margin-bottom: 0%;
+  }
+  #clientes1 {
+    display: block;
+  }
+  #nosotros {
+    display: block;
+  }
+  #nosotros #frentefabrica {
+    width: 90%;
+  }
+  #nosotros p {
+    margin: 5% 5% 5% 5%;
+  }
+  #nosotros img {
+    margin: 0%;
+  }
+  ul {
+    text-align: left;
+  }
+  .tintas-colores-diluyentes {
+    display: block;
+  }
+  .tintas-colores-diluyentes .imagenproductos1 {
+    width: 95%;
+  }
+  .tintas-colores-diluyentes .imagenproductos2 {
+    width: 95%;
+  }
+  .tintas-colores-diluyentes .imagenproductos3 {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #menu li {
+    margin-bottom: 0.5rem;
+  }
+  #logoprolas {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  #tintas-diluyentes {
+    grid-template-columns: 1fr;
+  }
+  #clientes1 {
+    grid-template-columns: 1fr;
+  }
+  #atajos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #atajos a {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+    margin-bottom: 1rem;
+  }
+  #info-footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    text-align: center;
+  }
+  #info-footer #logofooter {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  #info-footer .mapafootergrid {
+    grid-column: 1;
+  }
+  #info-footer .formulriofooter {
+    grid-column: 1;
+  }
+  #clientesgrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #clientesgrid #clientes-ejemplo {
+    width: 85%;
+  }
+  #clientesgrid .textopaginaclientes {
+    margin-top: 2%;
+  }
+  #clientes1 {
+    display: block;
+  }
+  #nosotros {
+    display: block;
+  }
+  #nosotros #frentefabrica {
+    width: 90%;
+  }
+  #nosotros p {
+    margin: 5% 5% 5% 5%;
+  }
+  #nosotros img {
+    margin: 0%;
+  }
+  ul {
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
