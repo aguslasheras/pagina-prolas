@@ -1,0 +1,40 @@
+/* css pagina clientes */
+
+#clientebackground {
+    font-size: medium;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5%;
+    background-image: url(../imagenes/fondo\ paginas\ secundarias.jpg);
+    h1 {
+        color: white;
+        background-color: rgb(192, 192, 192, 0.5);
+        display: inline-block;
+        padding: 10px;
+        border-radius: 15%;
+    }
+}
+#clientesgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "imagen texto";
+    background-color: rgb(254, 154, 154);
+    .imagenpaginaclientes {
+        grid-area: imagen;
+        text-align: center;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        #clientes-ejemplo {
+            width: 70%;  
+        }
+    }
+    .textopaginaclientes {
+        grid-area: texto;
+        text-align: center;
+        margin-top: 16%;
+        margin-right: 2%;
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+/* css pagina nosotros */
+
+#nosotros {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "fotonos textonos";
+    text-align: center;
+    img {
+        grid-area: fotonos;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 100px;
+    }
+    p {
+        grid-area: textonos;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    #frentefabrica {
+        height: 30rem;
+    }
+}

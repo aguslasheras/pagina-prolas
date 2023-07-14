@@ -1,4 +1,10 @@
-html{
+@import "nosotros";
+@import "clientes";
+@import "productos";
+@import "contacto";
+
+
+html {
     font-size: 62.5%; 
 }
 
@@ -44,12 +50,13 @@ ul{
         transform: translate(-50%, -50%);
         text-align: center;
         color: #fff;
-        h6 {
-            font-size: 5rem;
+        h1 {
+            font-size: 3rem;
             margin-bottom: 1rem;
         }
     }
 }   
+
 #imageninicio {
     width: 100%;
     height: 40rem;
@@ -173,141 +180,13 @@ p {
     }
 }
 
-/* css pagina clientes */
 
-#clientebackground {
-    font-size: medium;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 5%;
-    background-image: url(../imagenes/fondo\ paginas\ secundarias.jpg);
-    h1 {
-        color: white;
-        background-color: rgb(192, 192, 192, 0.5);
-        display: inline-block;
-        padding: 10px;
-        border-radius: 15%;
-    }
-}
-#clientesgrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "imagen texto";
-    background-color: rgb(254, 154, 154);
-    .imagenpaginaclientes {
-        grid-area: imagen;
-        text-align: center;
-        margin-top: 20%;
-        margin-bottom: 20%;
-        #clientes-ejemplo {
-            width: 70%;  
-        }
-    }
-    .textopaginaclientes {
-        grid-area: texto;
-        text-align: center;
-        margin-top: 16%;
-        margin-right: 2%;
-    }
-}
 
-/* css pagina nosotros */
 
-#nosotros {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "fotonos textonos";
-    text-align: center;
-    img {
-        grid-area: fotonos;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 100px;
-    }
-    p {
-        grid-area: textonos;
-        margin-top: 150px;
-        margin-bottom: 100px;
-    }
-    #frentefabrica {
-        height: 30rem;
-    }
-}
 
-/* css pagina contacto */
 
-#mapacontacto {
-    width: 100%;
-    height: 400px;
-}
 
-.formulario3 {
-    background-color:antiquewhite ;
-    text-align: center;
-}
 
-.enviar{
-    font-size: 2rem;
-}
-
-/* css productos */
-
-.tintas-colores-diluyentes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "tinta diluyente color1";
-    #tintasproductos {
-        margin-top: 2rem;
-        .imagenproductos1 {
-            grid-area: texto1;
-            margin: 0% 3% 3% 3%;
-        }
-        .textoproductos1 {
-            grid-area: texto1;
-            margin: 3% 3% 3% 3%;
-            background-color: orange;
-            border-radius: 3%;
-        }
-    }
-    h1 {
-        margin: 3% 3% 3% 3%;
-    }
-    h2 {
-        padding: 2%;
-    }
-    .imagenproductos2 {
-        grid-area: diluyente;
-        margin: 3% 3% 3% 3%
-    }
-    .textoproductos2 {
-        grid-area: texto2;
-        background-color: rgb(61, 195, 253);
-        border-radius: 3%;
-    }
-    .imagenproductos3 {
-        grid-area: color1;
-        margin: 3% 3% 3% 3%
-    }
-    .textoproductos3 {
-        grid-area: texto3;
-        background-color: pink ;
-        border-radius: 3%;
-        margin-left: 2%;
-        margin-right: 2%;
-        #catalogo {
-            background-color: pink;
-            color: #514e4e;
-            font-size: 2rem;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-    }
-    
-}
 
 @mixin block{
     display: block;

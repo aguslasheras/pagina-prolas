@@ -1,0 +1,56 @@
+/* css productos */
+
+.tintas-colores-diluyentes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tinta diluyente color1";
+    #tintasproductos {
+        margin-top: 2rem;
+        .imagenproductos1 {
+            grid-area: texto1;
+            margin: 0% 3% 3% 3%;
+        }
+        .textoproductos1 {
+            grid-area: texto1;
+            margin: 3% 3% 3% 3%;
+            background-color: orange;
+            border-radius: 3%;
+        }
+    }
+    h1 {
+        margin: 3% 3% 3% 3%;
+    }
+    h2 {
+        padding: 2%;
+    }
+    .imagenproductos2 {
+        grid-area: diluyente;
+        margin: 3% 3% 3% 3%
+    }
+    .textoproductos2 {
+        grid-area: texto2;
+        background-color: rgb(61, 195, 253);
+        border-radius: 3%;
+    }
+    .imagenproductos3 {
+        grid-area: color1;
+        margin: 3% 3% 3% 3%
+    }
+    .textoproductos3 {
+        grid-area: texto3;
+        background-color: pink ;
+        border-radius: 3%;
+        margin-left: 2%;
+        margin-right: 2%;
+        #catalogo {
+            background-color: pink;
+            color: #514e4e;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    }
+    
+}
